@@ -1,5 +1,5 @@
 import "./Carousel.css";
-import ImageBlock from "./Image-Block/ImageBlock";
+import ImageBlock from "./ImageBlock/ImageBlock";
 
 import imageSrc from "../../../public/lamborghini.jpg";
 
