@@ -1,26 +1,27 @@
 import "./Carousel.css";
 import ImageBlock from "./ImageBlock/ImageBlock";
 
-import imageSrc from "../../../public/lamborghini.jpg";
+import images from "../../../images.json";
+import { useState } from "react";
 
 export default function Carousel({ body }) {
-  let name = imageSrc
-    .split("/")[2]
-    .split(".")[0]
-    .split("-")
-    .map((word) => {
-      let splittedWord = word.split("");
-      let firstChar = splittedWord[0].toUpperCase();
-      splittedWord[0] = firstChar;
+  let imgBlocks = images.map((image, index) => {
+    let name = image.name.split("-").join(" ");
 
-      return splittedWord.join("");
-    })
-    .join(" ");
+    return (
+      <div key={index} className="image-wrapper">
+        <ImageBlock key={image.src} src={image.src} width={1280} height={720} />
+        <figcaption key={image.name} className="figcaption">
+          {name}
+        </figcaption>
+      </div>
+    );
+  });
 
   return (
     <div className="carousel">
-      <ImageBlock src={imageSrc} width={1280} height={720} />
-      <figcaption className="figcaption">{name}</figcaption>
+      <div className="carousel-items">{imgBlocks}</div>
+      {/* <ImageBlock src={images[1].src} width={1280} height={720} /> */}
     </div>
   );
 }
