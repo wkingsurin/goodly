@@ -9,7 +9,14 @@ import { useState, Children, useEffect } from "react";
 
 import Button from "./Button/Button";
 
-export default function Buttons({ body, root, children, gallery }) {
+export default function Buttons({
+  body,
+  root,
+  children,
+  gallery,
+  onMouseEnter,
+  onMouseLeave,
+}) {
   const IMAGE_WIDTH = 1280;
   const [offset, setOffset] = useState(0);
   let top = body.clientHeight / 2 - 90 / 2 - 36 + "px";
@@ -47,13 +54,12 @@ export default function Buttons({ body, root, children, gallery }) {
   };
 
   return (
-    <div className="buttons-block">
-      <Button
-        src={prevDisabledSrc}
-        direction="prev"
-        top={top}
-        onClick={prevSlide}
-      />
+    <div
+      className="buttons-block"
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+    >
+      <Button src={prevSrc} direction="prev" top={top} onClick={prevSlide} />
       <Button src={nextSrc} direction="next" top={top} onClick={nextSlide} />
     </div>
   );

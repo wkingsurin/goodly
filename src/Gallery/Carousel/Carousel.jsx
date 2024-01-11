@@ -4,7 +4,7 @@ import ImageBlock from "./ImageBlock/ImageBlock";
 import images from "../../../images.json";
 import { useState } from "react";
 
-export default function Carousel({ body }) {
+export default function Carousel({ body, onMouseEnter, onMouseLeave }) {
   let imgBlocks = images.map((image, index) => {
     let name = image.name.split("-").join(" ");
 
@@ -19,7 +19,11 @@ export default function Carousel({ body }) {
   });
 
   return (
-    <div className="carousel">
+    <div
+      className="carousel"
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+    >
       <div className="carousel-items">{imgBlocks}</div>
       {/* <ImageBlock src={images[1].src} width={1280} height={720} /> */}
     </div>

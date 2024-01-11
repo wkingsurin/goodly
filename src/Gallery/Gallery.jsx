@@ -11,10 +11,28 @@ export default function Gallery() {
 
   const galleryRef = useRef(null);
 
+  const onMouseEnter = () => {
+    galleryRef.current.querySelector(".buttons-block").style.opacity = 1;
+  };
+
+  const onMouseLeave = () => {
+    galleryRef.current.querySelector(".buttons-block").style.opacity = "";
+  };
+
   return (
     <div ref={galleryRef} className="gallery">
-      <Carousel body={body} />
-      <Buttons body={body} root={root} gallery={galleryRef} />
+      <Carousel
+        body={body}
+        onMouseEnter={onMouseEnter}
+        onMouseLeave={onMouseLeave}
+      />
+      <Buttons
+        onMouseEnter={onMouseEnter}
+        onMouseLeave={onMouseLeave}
+        body={body}
+        root={root}
+        gallery={galleryRef}
+      />
     </div>
   );
 }
