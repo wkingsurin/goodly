@@ -1,13 +1,13 @@
 [
-  { "name": "Bugatti-Chiron-Cozy", "src": "./public/bugatti-chiron-cozy.jpg" },
-  { "name": "Ferrari-SF90", "src": "./public/ferrari-sf90.jpg" },
-  { "name": "Ghost-Of-Tsushima", "src": "./public/ghost-of-tsushima.jpg" },
-  { "name": "Lamborghini", "src": "./public/lamborghini.jpg" },
-  { "name": "Porsche-911-Turbo-S", "src": "./public/porsche-911-turbo-s.jpg" },
-  { "name": "Porsche-911-GT3", "src": "./public/porsche-911-gt3.jpg" },
-  { "name": "Mercedes-Amg-One", "src": "./public/mercedes-amg-one.jpg" },
-  { "name": "Bmaster-Chief4", "src": "./public/master-chief4.jpg" },
-  { "name": "Mclaren-750S-Coupe", "src": "./public/mclaren-750s-coupe.jpg" },
-  { "name": "Forza-Motorsport-7", "src": "./public/forza-motorsport-7.jpg" },
-  { "name": "Hacker-Binary", "src": "./public/hacker-binary.jpg" }
+  { "name": "Bugatti-Chiron-Cozy", "src": "./bugatti-chiron-cozy.jpg" },
+  { "name": "Ferrari-SF90", "src": "./ferrari-sf90.jpg" },
+  { "name": "Ghost-Of-Tsushima", "src": "./ghost-of-tsushima.jpg" },
+  { "name": "Lamborghini", "src": "./lamborghini.jpg" },
+  { "name": "Porsche-911-Turbo-S", "src": "./porsche-911-turbo-s.jpg" },
+  { "name": "Porsche-911-GT3", "src": "./porsche-911-gt3.jpg" },
+  { "name": "Mercedes-Amg-One", "src": "./mercedes-amg-one.jpg" },
+  { "name": "Bmaster-Chief4", "src": "./master-chief4.jpg" },
+  { "name": "Mclaren-750S-Coupe", "src": "./mclaren-750s-coupe.jpg" },
+  { "name": "Forza-Motorsport-7", "src": "./forza-motorsport-7.jpg" },
+  { "name": "Hacker-Binary", "src": "./hacker-binary.jpg" }
 ]
